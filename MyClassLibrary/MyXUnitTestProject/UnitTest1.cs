@@ -13,5 +13,13 @@ namespace MyXUnitTestProject
             var result = calculation.Add(2, 3);
             Assert.Equal(5, result);
         }
+
+        [Fact]
+        public void multiplier()
+        {
+            var calculation = new Calculation();
+            var result = calculation.multiplier(2, 3);
+            Assert.Equal(6, result);
+        }
     }
 }
